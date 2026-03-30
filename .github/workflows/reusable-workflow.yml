@@ -1,1 +1,15 @@
+name: Reusable workflow
 
+on:
+ workflow_call: 
+  Inputs:
+   node:
+    required: true
+    type: string
+jobs:
+build:
+ runs on: Ubuntu-latest
+
+steps:
+ - uses: actions/checkout
+ steps
